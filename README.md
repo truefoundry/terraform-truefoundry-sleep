@@ -1,4 +1,4 @@
-# Terraform Sleep Module
+# Truefoundry Terraform Sleep Module
 
 This Terraform module provides a way to add delays/sleep during resource creation or destruction. This can be useful in scenarios where you need to wait for eventual consistency or when you need to introduce delays between resource provisioning.
 
@@ -48,6 +48,7 @@ module "sleep" {
 ## Examples
 
 ### Basic Usage
+
 ```hcl
 module "sleep" {
   source = "path/to/module"
@@ -57,6 +58,7 @@ module "sleep" {
 ```
 
 ### With Triggers
+
 ```hcl
 module "sleep" {
   source = "path/to/module"
@@ -70,6 +72,7 @@ module "sleep" {
 ```
 
 ### As a Dependency
+
 ```hcl
 module "sleep" {
   source = "path/to/module"
@@ -86,4 +89,4 @@ resource "aws_instance" "example" {
 
 ## License
 
-MIT Licensed. See LICENSE for full details. 
+MIT Licensed. See LICENSE for full details.
