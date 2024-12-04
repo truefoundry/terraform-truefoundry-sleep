@@ -27,23 +27,39 @@ module "sleep" {
 
 | Name | Version |
 |------|---------|
-| terraform | >= 0.13.0 |
-| time | ~> 0.9.0 |
+| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.0.0 |
+| <a name="requirement_time"></a> [time](#requirement\_time) | ~> 0.9.0 |
+
+## Providers
+
+| Name | Version |
+|------|---------|
+| <a name="provider_time"></a> [time](#provider\_time) | ~> 0.9.0 |
+
+## Modules
+
+No modules.
+
+## Resources
+
+| Name | Type |
+|------|------|
+| [time_sleep.wait](https://registry.terraform.io/providers/hashicorp/time/latest/docs/resources/sleep) | resource |
 
 ## Inputs
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| create_duration | Duration to sleep during create operation. Examples: '30s', '5m', '1h' | `string` | `"30s"` | no |
-| destroy_duration | Duration to sleep during destroy operation. Examples: '30s', '5m', '1h' | `string` | `"0s"` | no |
-| triggers | Arbitrary map of values that, when changed, will trigger a new sleep duration | `map(string)` | `{}` | no |
+| <a name="input_create_duration"></a> [create\_duration](#input\_create\_duration) | Duration to sleep during create operation. Examples: '30s', '5m', '1h' | `string` | `"30s"` | no |
+| <a name="input_destroy_duration"></a> [destroy\_duration](#input\_destroy\_duration) | Duration to sleep during destroy operation. Examples: '30s', '5m', '1h' | `string` | `"0s"` | no |
+| <a name="input_triggers"></a> [triggers](#input\_triggers) | Arbitrary map of values that, when changed, will trigger a new sleep duration | `map(string)` | `{}` | no |
 
 ## Outputs
 
 | Name | Description |
 |------|-------------|
-| id | ID of the sleep resource that can be used as an explicit dependency |
-| triggers | Map of trigger values that were provided |
+| <a name="output_id"></a> [id](#output\_id) | ID of the sleep resource that can be used as an explicit dependency |
+| <a name="output_triggers"></a> [triggers](#output\_triggers) | Map of trigger values that were provided |
 <!-- END_TF_DOCS -->
 
 ## Examples
