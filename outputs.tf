@@ -6,4 +6,4 @@ output "id" {
 output "triggers" {
   description = "Map of trigger values that were provided"
   value       = time_sleep.wait.triggers
-} 
+}
