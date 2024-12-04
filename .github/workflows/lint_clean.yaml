@@ -1,0 +1,9 @@
+name: 'Lint and Clean'
+
+on:
+  - pull_request
+
+jobs:
+  fmt_and_lint:
+    name: Terraform fmt and tflint
+    uses: truefoundry/github-workflows-public/.github/workflows/terraform-lint-format.yml@v0.1.1
