@@ -22,7 +22,7 @@ module "sleep" {
   }
 }
 ```
-
+<!-- BEGIN_TF_DOCS -->
 ## Requirements
 
 | Name | Version |
@@ -44,6 +44,7 @@ module "sleep" {
 |------|-------------|
 | id | ID of the sleep resource that can be used as an explicit dependency |
 | triggers | Map of trigger values that were provided |
+<!-- END_TF_DOCS -->
 
 ## Examples
 
