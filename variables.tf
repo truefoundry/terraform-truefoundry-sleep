@@ -14,4 +14,4 @@ variable "triggers" {
   description = "Arbitrary map of values that, when changed, will trigger a new sleep duration"
   type        = map(string)
   default     = {}
-} 
+}
