@@ -103,7 +103,3 @@ resource "aws_instance" "example" {
   depends_on = [module.sleep]
 }
 ```
-
-## License
-
-MIT Licensed. See LICENSE for full details.
